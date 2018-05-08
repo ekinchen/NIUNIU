@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: development
+
+---
+spring:
+  application:
+    name: niuniu-gateway
+    version: alpha-Snapshot
+
+#  cloud:
+#    zookeeper:
+#      config:
+#        root: /config/service/omega
+
+---
+spring:
+  profiles: development
+  cloud:
+    zookeeper:
+      connect-string: 127.0.0.1:2181

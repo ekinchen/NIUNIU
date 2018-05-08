@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/niuniu.iml" filepath="$PROJECT_DIR$/niuniu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/niuniu-business/niuniu-business.iml" filepath="$PROJECT_DIR$/niuniu-business/niuniu-business.iml" />
+      <module fileurl="file://$PROJECT_DIR$/niuniu-gateway/niuniu-gateway.iml" filepath="$PROJECT_DIR$/niuniu-gateway/niuniu-gateway.iml" />
     </modules>
   </component>
 </project>

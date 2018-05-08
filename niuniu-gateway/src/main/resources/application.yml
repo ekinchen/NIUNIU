@@ -1,0 +1,51 @@
+app:
+  instance: ${random.uuid}
+
+spring:
+  output:
+    ansi:
+      enabled: ALWAYS
+  session:
+    store-type: none
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+
+#  mail:
+#      host: smtp.163.com
+#      port: 465
+#      username: omegaquant@163.com
+#      password: Wsxedc4321
+#      properties:
+#          mail:
+#              smtp:
+#                  auth: true
+#                  timeout: 25000
+#                  socketFactory.class: javax.net.ssl.SSLSocketFactory
+#  freemarker:
+#      allow-request-override: false
+#      cache: true
+#      check-template-location: true
+#      charset: UTF-8
+#      content-type: text/html
+#      expose-request-attributes: false
+#      expose-session-attributes: false
+#      expose-spring-macro-helpers: false
+#      template-loader-path: classpath:/email/
+
+flyway:
+  enabled: false
+
+server:
+  compression:
+    enabled: true
+  port: 8080
+
+security:
+  ignored: "/**"
+
+info:
+  build:
+    artifactId: ${build.artifact}
+    version: ${build.version}
+    time: ${build.time}
